@@ -149,6 +149,8 @@ body {
 }
 .Carousel-div {
   margin-top: 20px;
+  max-width: 350px;
+  width:100%
 }
 .Recommend {
   margin-bottom: 20px;
@@ -219,9 +221,6 @@ body {
     margin-top: 100px;
     width: 350px;
     height: 300px;
-  }
-  .Carousel-img {
-  height: 400px;
   }
   .banner-info {
     width: 80%;

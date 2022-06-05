@@ -170,6 +170,10 @@ body {
   color: red;
   margin-top: 20px;
   cursor: pointer;
+  transition: all 0.1s linear;
+}
+.btnWrap:hover {
+  transform: scale(0.9);
 }
 .youtube {
   margin-left: 200px;

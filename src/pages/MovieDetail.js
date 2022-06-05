@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { MovieAction } from "../redux/actions/MovieAction";
 import { Badge, Container } from "react-bootstrap";
@@ -186,4 +188,5 @@ const MovieDetail = () => {
 };
 
 export default MovieDetail;
+
 

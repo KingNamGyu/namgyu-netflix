@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { MovieAction } from "../redux/actions/MovieAction";
 import { Badge, Container } from "react-bootstrap";
@@ -26,28 +24,28 @@ const MovieDetail = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const params = useParams();
@@ -149,7 +147,6 @@ const MovieDetail = () => {
           </div>
         </div>
       </div>
-
       <Container className="Carousel-div">
         <h1 className="Recommend">Recommend</h1>
         <div>
@@ -166,7 +163,6 @@ const MovieDetail = () => {
           </Slider>
         </div>
       </Container>
-
       <Modal
         className="youtube"
         open={open}
@@ -190,3 +186,4 @@ const MovieDetail = () => {
 };
 
 export default MovieDetail;
+

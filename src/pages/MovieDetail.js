@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { MovieAction } from "../redux/actions/MovieAction";
-import { Badge, Container } from "react-bootstrap";
+import { Badge, Container, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faClock,
@@ -94,14 +94,14 @@ const MovieDetail = () => {
             ")",
         }}
       >
-        <div>
+        <Col lg={5}>
           <img
             className="detail-img"
             src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${videoDetail.poster_path}`}
             alt=""
           />
-        </div>
-        <div className="title">
+        </Col>
+        <Col lg={7} className="title">
           {videoDetail.title ? videoDetail.title : videoDetail.name}
 
           <span className="date">
@@ -147,7 +147,7 @@ const MovieDetail = () => {
               <FontAwesomeIcon icon={faPlay} className="faPlay" /> Trailer
             </div>
           </div>
-        </div>
+        </Col>
       </div>
       <Container className="Carousel-div">
         <h1 className="Recommend">Recommend</h1>
@@ -188,5 +188,4 @@ const MovieDetail = () => {
 };
 
 export default MovieDetail;
-
 

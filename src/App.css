@@ -73,7 +73,7 @@ body {
 .title {
   z-index: 2;
   font-size: 60px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   font-weight: 700;
   position: relative;
   margin-left: 100px;
@@ -181,7 +181,7 @@ body {
   width: 700px;
   height: 500px;
 }
-@media screen and (max-width: 63rem) {
+@media screen and (max-width: 89rem) {
   .hide {
     visibility: visible;
   }
@@ -190,7 +190,7 @@ body {
   }
   .title {
     font-size: 40px;
-    margin-top: 250px;
+    margin-top: 200px;
     margin-left: 20px;
   }
   .date {
